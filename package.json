@@ -1,0 +1,23 @@
+{
+  "name": "sendemail",
+  "version": "1.0.0",
+  "description": "sending emails from Angular through Node.js",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "btoa": "^1.2.1",
+    "cheerio": "^1.0.0-rc.10",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "esm": "^3.2.25",
+    "express": "^4.17.2",
+    "googleapis": "^92.0.0",
+    "js-base64": "^3.7.2",
+    "mailparser": "^3.4.0",
+    "multer": "1.4.3",
+    "nodejs-base64": "^2.0.0",
+    "nodemailer": "^6.7.1",
+    "open": "^8.4.0",
+    "openssl": "^2.0.0"
+  }
+}

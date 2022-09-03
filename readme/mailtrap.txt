@@ -1,0 +1,176 @@
+
+
+API token 3fb328bc0bcb671ba01239492888babd
+
+JWT token : eyJhbGciOiJIUzUxMiJ9.eyJkYXRhIjp7InRva2VuIjoiM2ZiMzI4YmMwYmNiNjcxYmEwMTIzOTQ5Mjg4OGJhYmQifX0.8sVQMC6pAtQ8XAw6i6sDV_Xox2qltZQtrHy6jEXBonNGPGcLNWZFwKgyhSQYYxPPTfj1bK3WgR85GylYQ2K_iA
+
+curl -X POST 'https://10.107.12.123/import_config' -H 'Content-Type: application/json' -H 'Authorization: Token 3f98d0a178ddd176faea94e6d629621920d203b2624550e68a' ^
+
+ -H 'Cookie: csrftoken=wC4LbjwDsh5BkRPi7TgwZN2FbQLMMpuz; sessionid=7xq7jv95j50k6lkojbrkp2ndgfczfe9v' -F 'user_file=@/C:/Users/402096/Desktop/dau_settings-123.conf'
+ 
+ 
+ curl -X --url 'smtp://smtp.mailtrap.io:2525' --user '807ea472d9f432:26d8e32c2650a1' --mail-from from@example.com ^
+--mail-rcpt vinayak.anvekar@lntinfotech.com ^
+
+  -F 'user_file=@/D:/Learnings/Javascript/angular/nodeemail/mailtrap.txt'
+  
+curl -X GET https://developerapi.icicibank.com:8443/api/v0/upi1/gettoken -H 'Content-Type: application/json' ^ 
+ -d '{ ' ^
+	'	"MobileNumber": "90404XXXXX", ' ^
+	' "deviceId": "84521654864135", ' ^
+  ' "sequenceNumber": "ef1e92b4a01d4618a0eca5fdecc37ff23f3", ' ^
+  ' "channelCode": "IMobile", ' ^
+  ' "applicationId": "ghjuyu678854346", ' ^
+  ' "subType": "rotate", ' ^
+  ' "challenge": "wUwDPglyJu9LOnkBAf4vxSpQgQZltcz7LWwEquhdm5kSQIk"  ' ^
+ '	}'
+
+Newuser@12345
+
+curl -X GET https://developerapi.icicibank.com:8443/api/v0/upi1/gettoken -H 'Content-Type: application/json' ^ 
+  -d @testplace.json
+
+
+curl -X POST http://localhost:8080/sendmail -F 'user_file=@/D:/Learnings/Javascript/angular/nodeemail/mailtrap.txt'
+curl -X POST http://localhost:8080/sendmail  -H "Content-Type: multipart/form-data"  -F "file=@D:\Learnings\Javascript\angular\nodeemail\mailtrap.txt"
+
+curl -X POST http://localhost:8080/asthamail  -H "Content-Type: multipart/form-data"  -F "file=@D:\Learnings\Javascript\angular\nodeemail\CV_Vinayak_profile.doc"
+
+	
+sanket.w9@gmail.com 
+curl https://nodejs.org/dist/v16.16.0/node-v16.16.0-x64.msi --output "d:\Nordea"
+curl -X POST http://localhost:3000/register 
+
+curl -X GET https://ssc.larsentoubro.com/PRMHome/Dashboard/getbanknameList -H 'Content-Type: application/json' ^ 
+  -d @testplace.json
+curl -X GET https://ifsc.razorpay.com/ICICI 
+
+curl -X GET https://www.npci.org.in/what-we-do/nach/live-members/live-banks
+
+https://www.npmjs.com/package/ft-request-multiple-urls
+
+curl -X GET https://www.sebi.gov.in/sebiweb/ajax/other/getintmfpiinfo.jsp?nextValue=2&next=n&intmId=43&contPer=&name=&regNo=&email=&location=&exchange=&affiliate=&alp=&doDirect=0&intmIds=
+
+curl -X GET https://www.sebi.gov.in/sebiweb/ajax/other/getintmfpiinfo.jsp -F 'user_file=@/D:/Learnings/node/linkpe/formdata.txt'
+
+curl -X POST -H 'Content-Type: application/json' -d '{"nextValue":"2","next":"n","intmId":"43","contPer":"","name":"","reqNo":"","email":"","location":"","exchange":"","affiliate":"","alp":"","doDirect":"0","intmIds":""}' https://www.sebi.gov.in/sebiweb/ajax/other/getintmfpiinfo.jsp
+
+curl -X POST https://www.sebi.gov.in/sebiweb/ajax/other/getintmfpiinfo.jsp '{"nextValue":"2","next":"n","intmId":"43","contPer":"","name":"","reqNo":"","email":"","location":"","exchange":"","affiliate":"","alp":"","doDirect":"0","intmIds":""}'
+
+curl -X POST https://www.sebi.gov.in/sebiweb/ajax/other/getintmfpiinfo.jsp -d '{"nextValue":"2","next":"n","intmId":"43","contPer":"","name":"","reqNo":"","email":"","location":"","exchange":"","affiliate":"","alp":"","doDirect":"0","intmIds":""}'
+
+curl -X POST https://www.sebi.gov.in/sebiweb/ajax/other/getintmfpiinfo.jsp -d  'nextValue=2&next=n&intmId=43&contPer=&name=&regNo=&email=&location=&exchange=&affiliate=&alp=&doDirect=0&intmIds='
+https://pnbindia.com/downloadprocess.aspx?fid=Zb7ImdUNlz9Ge73qn1nXQg==
+
+̥eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImVhYzAxZWUwLWZjZTUtNDRmMS1hYThkLTBlNTJkOTk3NWYyYSIsInVzZXJuYW1lIjoiRGVtbyB1c2VybmFtZSA5YjUwMDI0MC00MTRlLTQxZTEtOWYwZS01NGNlOWU0YWNiYmQiLCJlbWFpbCI6InVzZXIzQGV4YW1wbGUuY29tIiwiaWF0IjoxNjM5Mjk4NDEyLCJleHAiOjE2MzkyOTg0NzJ9.Kpg0A6tJg8B0RpsyRDki8u5e45bsiMxbkNQsnDAqYxo
+
+@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object wet.webclient).DownloadString('https://nodejs.org/en/download/ '))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\nodejs\bin
+--------------------------------- 
+curl: (1) Protocol "'smtp" not supported or disabled in libcurl
+curl: (3) Illegal characters found in URL
+------------------------------------------------
+curl --ssl-reqd ^
+--url 'smtp://smtp.mailtrap.io:2525' ^
+--user '807ea472d9f432:26d8e32c2650a1' ^
+--mail-from from@example.com ^
+--mail-rcpt vinayak.anvekar@lntinfotech.com ^
+--upload-file - <<EOF
+From: Magic Elves <from@example.com>
+To: Mailtrap Inbox <vinayak.anvekar@lntinfotech.com>
+Subject: You are awesome!
+Content-Type: multipart/alternative; boundary="boundary-string"
+
+--boundary-string
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Congrats for sending test email with Mailtrap!
+
+Inspect it using the tabs above and learn how this email can be improved.
+Now send your email using our fake SMTP server and integration of your choice!
+
+Good luck! Hope it works.
+
+
+Hello Sir/Madam ,
+
+This is regarding Policy No: 955566184 , It is actually matured in June, due to COVID situation the LIC BOND paper has been misplaced. 
+
+Currently for Mother’s treatment, I have come to home town and need the amount. Please could you help me to get the amount. 
+
+At present have been residing in Karnataka , at Siddhapur Taluka with Pin Code 581355.
+
+Vinayak Anvekar
+(IT Support )
+
+
+----------------------------------------------------------------------------------------------------
+Look at the number of rows you’re requesting with the query and use indexes to break your results down into smaller pieces. Indexes allow you to 
+search through the data more efficiently—much like the index to a book. Creating an index involves identifying which columns you want to
+ include and giving your index a name. The syntax is as follows:
+
+CREATE INDEX <index_name> on <table_name> ( <column3>, <column42>, … );
+
+This will allow you to create an index in a table based on the columns you want to be included in the index.
+
+You can use your indexes to access smaller parts of the tables later, instead of having to re-scan the entire thing. When indexing,
+ you should index all the predicates in JOIN, WHERE, ORDER BY, and GROUP BY clauses.
+
+If a full-table scan is the fastest access method, particularly for smaller tables, you can cache the scan, so it can be more quickly accessed again.
+
+-----------------------------------------------------------------------------------------------------
+Hello Team, properly configure the Microsoft Active Directory , if that is host ed on Azure of any cloud provider , 
+ensure the Availability Zones and User Base locations are mapped properly .   User's are facing issues because either Cisco VPN connectivity 
+is hosted separately or preconfigured to connect to Chennai Branch Office and the User Details are in the LDAP in different locations. The 
+challenges are faced by user's while even in viewing  Word documents ,which always tends to go in Safe or Repair mode. There seems the Fault
+ Domain for Azure is not configured properly , due to which the Microsoft Updates are not happening properly.
+
+INC2224837 , 
+
+
+--boundary-string
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="font-family: sans-serif;">
+    <div style="display: block; margin: auto; max-width: 600px;" class="main">
+      <h1 style="font-size: 18px; font-weight: bold; margin-top: 20px">Congrats for sending test email with Mailtrap!</h1>
+      <p>Inspect it using the tabs you see above and learn how this email can be improved.</p>
+      <img alt="Inspect with Tabs" src="https://assets-examples.mailtrap.io/integration-examples/welcome.png" style="width: 100%;">
+      <p>Now send your email using our fake SMTP server and integration of your choice!</p>
+      <p>Good luck! Hope it works.</p>
+    </div>
+    <!-- Example of invalid for email html/css, will be detected by Mailtrap: -->
+    <style>
+      .main { background-color: white; }
+      a:hover { border-left-width: 1em; min-height: 2em; }
+    </style>
+  </body>
+</html>
+
+--boundary-string--
+EOF
+
+
+Thanks for registering.Your unique requestid is :6514. You will receive a confirmation email once your application is approved.
+ You can explore our services including a sandbox testing environment. However, you need to hold a valid ICICI Bank Current Account 
+ for placing a request to do UAT testing
+ 
+ 
+ {
+    "BankRRN": "024709286464",
+    "MobileAppData": "<?xml version="1.0 " encoding="UTF-8 " standalone="no "?><ns2:RespListKeys xmlns:ns2="http: //npci.org/upi/schema/" xmlns:ns3="http://npci.org/cm/schema/"><Head msgId="1GRDpegARYNybjtLnMyz" orgId="NPCI" ts="2020-09-03T09:32:25+05:30" ver="2.0"/><Resp reqMsgId="ICI00051af407efc255a4df0be32c2d2b20" result="SUCCESS"/><Txn id="ICIWA9HPMWEZMQ322222222222222222222" note="GetToken" pspOrgId="400011" refId="ICIWA9HPMWEZMQ322222222222222222222" refUrl="https://www.icicibank.com" ts="2020-09-03T09:32:16+05:30" type="GetToken"/><keyList><key code="NPCI" ki="20150822" owner="NPCI" type="CLF"><keyValue xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">JDJETsQlmI47ug7n2ftlR9fWnyU3RKLb9dOr04/+IMg=</keyValue></key></keyList><Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><DigestValue>ZMOP6WGoODvVF1TN9rFn5DO27dM8an2i83DjRvyb3yk=</DigestValue></Reference></SignedInfo><SignatureValue>N6Y/12xYuhXfE6BKQcncd2sLY9s0gej7r1jlE02wVcJEvqaYkRhH0dDeKeWshqmD19M1ITYioAGkoMHyCoyu92LJYbhCLmj1mNW0ptcq4pPpSCL5Kg2F9RHTy7IA53m3ZQcpQyFc2mWGdia0oFZAvv57T93SDODZ88Z+ll95SU8+qN4YgfAzxGyq6VD6MFOD5FsRgF32IarU81XkBMoVn0YzPC6qwUMdLQREIr+X2FkskIHshnhWqX8JeFfNPV5rcG5DTo99BfqQ8ze5MRUZA6sb6EtKuqMk/uPw6KCg0sMV9TYGN70RFqHEfQf6DOFtJ3YWH6yfkuHIaZeNn8oKgw==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uMKxWfy0WcPp98muBWa6yhpmb6ZGZGSKHRIOv05UlIN5TbUPl6yEerh7Wj0+JyKfsOntRdAVhkLJGRoHwH6gEEeFNHge7kPea/B33cQAbqa39mnP5F1aaZT3tjJnKrfI1Wum0crdb7dAMzft4JILOEa+s3Uh7OdYEl/Xp7EisdSoJ345Cj0LTfLZEQzRdVGovXZrfLByJysH11V9tDrIVv75C/3UndwjHt3NrqzNBoUMh5VZRFkcwuebUAkhIed5gvoysJwd0yYGrAUXNrXJJDTAj5diCuasWyfWZR9lsX5l14hdxF+lqadR/pgII53DW5oEy2LMXgvt2u/qmSml8w==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue></KeyInfo></Signature></ns2:RespListKeys>",    
+"SeqNo":"ICIWA9HPMWEZMQ322222222222222222222",   
+"UpiTranlogId":"297286464",    
+"UserProfile":"",    
+"message":"Transaction Successful",    
+"response":"0",    
+"success":"true"    
+ }

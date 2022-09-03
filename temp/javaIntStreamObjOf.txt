@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.*;
+import java.util.stream.*;
+
+public class MyClass {
+    public static void main(String args[]) {
+      int x=10;
+      int y=25;
+      int z=x+y;
+
+      System.out.println("Sum of x+y = " + z);
+      
+      IntStream ls = Arrays.stream(new int[] {10,15,1,23,42});
+      
+      
+     // System.out.println("i class "+( i.getClass())); return 
+      List<String> myStringNum  =ls.map(i-> { System.out.println("i class "+(typeOf i)) return i+"";}).collect(Collectors.toList());
+      
+      System.out.println("print list length "+myStringNum.size());
+      System.out.println("print list length "+myStringNum.get(0));
+     /* myStringNum.forEach((g) -> { 
+           System.out.println(g);
+                   if(g.startsWith("1")){
+                       System.out.println(g);
+                   }
+      });
+      */
+    }
+}

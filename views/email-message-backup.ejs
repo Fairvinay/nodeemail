@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+.main {
+  padding: 10px 14px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.main .addresse {
+box-shadow: 0 2px 3px 0  rgba(65, 64, 64, 0.2);
+   border-radius: 3px;
+   border-width:1px;
+   display: table-cell;
+    height: 1%;
+}
+.para {
+  box-shadow: 0 2px 3px 0  rgba(65, 64, 64, 0.2);
+    width: 930px;
+    height: 995px;
+   border-radius: 3px;
+    padding: 2px 3px;
+}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.2s;
+      width: 130px;
+      height: 83px;
+      padding: 2px 3px;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container {
+      padding: 1px 1px;
+      margin:0 0;
+      
+    }
+    .container > h4 > span {
+      font-family:  "courier", Verdana MS-SanSerif;
+      font-size: 13px;
+      font-weight:bold;
+    } 
+    #frameID { 
+        width : 95%;
+        height: 90%;
+
+    }
+    .active { 
+       text-align: center;
+     }
+    .subTitle {
+      background-color:lavenderblush;
+      font-family:  "Verdana", MS-SanSerif;
+      font-size: 18px;
+      font-weight:bold;
+      margin: 10px 4px;
+      padding: 10px 13px;
+      display:inline;
+    }
+    .msgTitle {
+      font-family: "Verdana", MS-SanSerif;
+      font-size: 23px;
+      font-weight:bold;
+     }
+</style>
+<script type="text/javascript">
+  
+    function setContent() {
+        var frameObj = 
+                    document.getElementById(frameID);
+                var frameContent = frameObj
+                    .contentWindow.document.body.innerHTML;
+        frameContent = eval("");
+    }
+    function getIframeDocument(element)
+        {
+            var doc = element.contentDocument;
+                if (doc == undefined || doc == null)
+                {
+                doc = element.contentWindow.document;
+                }
+
+            return doc;
+        }
+ window.onload = function()
+    { //  var decodedString = atob('<%-contentMail%>');
+         //var decodedSub = atob('<%-subject%>');
+         //document.getElementById('subJ').innerHTML = decodedSub;
+        let frag = document.createRange().createContextualFragment(document.getElementById('content').innerHTML);
+       getIframeDocument(document.getElementById('frameID')).body.innerHTML ="" ;//decodedString;
+    }
+</script>
+
+
+</head
+
+<body>
+<div class="main">
+   <div>
+      <span class="addresse">  <h3><b>Mail Messages </b></h3> </span>
+      <br/> 
+	   <div class="para">
+       <p>
+            <ul class="list-group">
+                    <li class="list-group-item active "><span class="msgTitle">Message Page</span> </li>
+                    <li class="list-group-item"> <button class="btn btn-info" > Subject: </button> 
+                      <span class=""><div id="subJ" class="badge subTitle"></div></span></li>
+                  <li class="list-group-item"> <button class="btn btn-info"> 
+                            From : </button> 
+                     <span class=""><div class="badge subTitle"> <%= from  %> </div></span></li>
+                  <li class="list-group-item"> <button class="btn btn-info" > To: </button> 
+                        <span class=""><div class="badge subTitle"><%= to %></div></span></li>
+                  <li class="list-group-item"> <button class="btn btn-info" > Date: </button> 
+                              <span class=""><div class="badge subTitle"><%= date %></div></span></li>
+            </ul>
+         <!--  <ul class="list-group">
+              <li class="list-group-item active "><span class="msgTitle">Message Page</span> </li>
+              <li class="list-group-item"> <button class="btn btn-info" > Subject: </button> 
+                <span class=""><div class="badge subTitle"><%= subject %></div></span></li>
+              <li class="list-group-item"> <button class="btn btn-info"> 
+                    From : </button> 
+                <span class=""><div class="badge subTitle"> <%= from  %> </div></span></li>
+              <li class="list-group-item"> <button class="btn btn-info" > To: </button> 
+                    <span class=""><div class="badge subTitle"><%= to %></div></span></li>
+              <li class="list-group-item"> <button class="btn btn-info" > Date: </button> 
+                          <span class=""><div class="badge subTitle"><%= date %></div></span></li>
+            </ul>-->
+                
+       </p> <!-- onload="javascript:setContent();" -->
+       <iframe id="frameID" src="" >
+        
+       </iframe>
+       <p><a type="button" href="http://localhost:8080/hello" target="frameID">Read Email </a></p>
+		 </div>
+		
+   </div>
+   <div id="content" style="display:none ">
+           
+
+    </div>
+
+</div>
+</body>
+</html>
+         

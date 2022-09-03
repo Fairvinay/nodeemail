@@ -1,0 +1,62 @@
+
+<style>
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(65, 64, 64, 0.2);
+      transition: 0.2s;
+      width: 130px;
+      height: 83px;
+      padding: 0px 0px;
+    }
+    
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .container {
+      padding: 1px 1px;
+      margin:0 0;
+      
+    }
+    .container > h4 > span {
+      font-family:  "courier", Verdana MS-SanSerif;
+      font-size: 13px;
+      font-weight:bold;
+    } 
+</style>
+
+<div id="main">
+    <div>
+        <h4><b>Hello <%= recepientName %>, </b> </h4>
+       <br/> 
+       <div class="card">
+        <p>
+         <b>Name: </b> <%= requesterName %> <br/>
+         <b>Official Email: </b><%= recepientOfcEmail %>  <br/>
+          <b>Personal Email: </b><%= recepientPersonEmail %>  <br/>
+         
+ 
+         <p> 
+            As per our discussion past 6 months, and the current COVID situation.
+            Can you ensure: 
+            <ul> 
+              <li> In case of Job loss or unable to get/perform job(customer as in me) would be 
+                   provided employment at our investments company 
+              </li> 
+            </ul>
+          
+         </p>
+         <p> Look forward to your response and affirmation,  
+              Attached is the Job Profile and other documents.
+          </p>
+        </div>
+          
+    </div>
+    <div class="card">
+     <div class="container">
+          <h4><%= requesterName %> <img src="img_avatar.png" alt="Avatar" style="width:10%">
+          <span><%= requesterDesig %></span> 
+          </h4> 
+     </div>
+    </div>
+ </div> 
+          

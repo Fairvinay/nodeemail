@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/emailcustom.css">
+<script type="text/javascript">
+  
+    function setContent() {
+        var frameObj = 
+                    document.getElementById("frameID");
+                var frameContent = frameObj
+                    .contentWindow.document.body.innerHTML;
+        frameContent = eval("");
+
+    }
+    function getIframeDocument(element)
+        {
+            var doc = element.contentDocument;
+                if (doc == undefined || doc == null)
+                {
+                doc = element.contentWindow.document;
+                }
+
+            return doc;
+        }
+   window.onload = function()
+    {  var decodedString = atob('<%-contentMail%>');
+        let frag = document.createRange().createContextualFragment(document.getElementById('content').innerHTML);
+        
+        // style="height: 429px;width: 587px;"
+        // height: 1829px; width: 687px;
+
+        var frameEle  = document.getElementById('frameID');
+        var frame = getIframeDocument(frameEle);
+
+       
+        frame.body.innerHTML =decodedString;
+        frameEle.style.height =  Math.round((frame.body.scrollHeight ) * .25)+ 'px';
+  
+        frameEle.style.width =  Math.round((frame.body.scrollWidth ) * .85)+ 'px' ;
+   /* // Adjusting the iframe height onload event
+    frame.onload = function()
+        // function execute while load the iframe
+        { // set the height of the iframe as 
+          // the height of the iframe content
+          frame.style.height = 
+          frame.contentWindow.document.body.scrollHeight + 'px';
+        }
+    */
+
+
+
+
+
+    }
+</script>
+
+
+</head
+
+<body>
+    <div class="main">
+        <div>
+           <span class="addresse">  <h3> 
+              <div class="emailHeader"> <b> EMail </b> </div> <div style="margin-right: 5px;"> Messages</div>
+             <!-- <div class="emailHeader"> EMail  </div>  Messages --> </h3> </span>
+         <div id="containMiddle" style="display: flex;">
+          <div class="para">
+            <p>
+                <ul class="list-group">
+                    <li class="list-group-item active "><span class="msgTitle">Message Page</span> </li>
+                    <li class="list-group-item"> <button class="btn btn-info"> Subject: </button> 
+                    <p id="subJ" class=" subTitle"><%= subjectMail %></p></li>
+                    <li class="list-group-item"> <button class="btn btn-info"> From : </button> 
+                    <p class=" subTitle"> <%= fromMail  %> </p></li>
+                    <li class="list-group-item"> <button class="btn btn-info" > To: </button> 
+                     <p class=" subTitle"><%= toMail %></p></li>
+                    <li class="list-group-item"> <button class="btn btn-info" > Date: </button> 
+                           <p class=" subTitle"><%= dateMail %></p></li>
+                    </ul>           
+            </p> 
+            <iframe id="frameID" src="">
+             
+            </iframe>
+               <p><a type="button" href="http://localhost:8080/hello" target="frameID">Read Email </a></p>
+          </div>
+          <div class="rightPara">
+              <blockquote><q>Content is presented as is<br/>
+                Authorisation & Access issues are ,<br/>
+                at the jusrisdrictions of the accessor <br/>
+                But still, like air, make best possbile rise.</q>
+                <p>&mdash;</p>
+                </blockquote>
+          </div>
+        </div>
+        </div>
+        <div id="content" style="display:none ">
+                
+     
+         </div>
+     
+     </div>
+</body>
+</html>
+         
